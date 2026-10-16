@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillPlay Arena - App Bundle (.aab) & Console Resources</title>
+  <style>
+    :root {
+      --bg-color: #0b111e;
+      --card-bg: #131c31;
+      --card-border: #223152;
+      --accent: #00e5ff;
+      --accent-green: #10b981;
+      --accent-gold: #ffb300;
+      --text: #f0f4f8;
+      --text-muted: #94a3b8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg-color);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 32px 16px;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: rgba(0, 229, 255, 0.15);
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 8px;
+      color: #fff;
+    }
+    p.subtitle {
+      color: var(--text-muted);
+      font-size: 15px;
+      margin-bottom: 28px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+    .card h2 {
+      font-size: 18px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--accent-green);
+      color: #052e16;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      margin-top: 12px;
+      margin-right: 12px;
+    }
+    .btn:hover {
+      filter: brightness(1.15);
+      transform: translateY(-1px);
+    }
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.08);
+      color: #fff;
+      border: 1px solid var(--card-border);
+    }
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.15);
+    }
+    .code-box {
+      background: #060911;
+      border: 1px solid #1a253c;
+      padding: 14px 16px;
+      border-radius: 8px;
+      font-family: monospace;
+      font-size: 13px;
+      color: #38bdf8;
+      overflow-x: auto;
+      margin: 12px 0;
+    }
+    ul, ol {
+      margin-left: 20px;
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+    li { margin-bottom: 8px; }
+    li strong { color: var(--text); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span class="badge">Google Play Console Ready</span>
+    <h1>SkillPlay Arena - Production Bundle</h1>
+    <p class="subtitle">Aapka Android App Bundle (.aab) aur Play Console verification files successfully generate ho chuke hain.</p>
+
+    <div class="card" style="border: 2px solid var(--accent); background: rgba(56, 189, 248, 0.05);">
+      <h2>📁 Full Android Studio Project (ZIP)</h2>
+      <p style="color: var(--text-muted); font-size: 14px;">
+        Complete Android Studio project source code with all Gradle files, AndroidManifest, assets, Jetpack Compose screens, Firebase config (google-services.json), and keystores:
+      </p>
+      <div style="margin-top: 16px;">
+        <a class="btn" href="SkillPlayArena-SourceCode.zip" download="SkillPlayArena-SourceCode.zip" style="background: #10b981; color: white; font-weight: bold; font-size: 16px; padding: 12px 20px;">
+          📦 Download Complete Project (SkillPlayArena-SourceCode.zip)
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📦 Download Android App Bundle (.aab) & APK</h2>
+      <p style="color: var(--text-muted); font-size: 14px;">
+        Yeh signed production ready release bundle hai jisko seedhe Google Play Console ke <strong>Production / Testing Releases</strong> section me upload kar sakte hain:
+      </p>
+      <div style="margin-top: 16px;">
+        <a class="btn" href="app-release.aab" download="SkillPlayArena-release.aab">
+          ⬇️ Download app-release.aab (Play Console)
+        </a>
+        <a class="btn btn-secondary" href="app-release.apk" download="SkillPlayArena-release.apk">
+          📱 Download app-release.apk (Direct Phone Install)
+        </a>
+        <a class="btn btn-secondary" href="app-debug.aab" download="SkillPlayArena-debug.aab">
+          Download app-debug.aab
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🔑 Signing Keystore Details</h2>
+      <p style="color: var(--text-muted); font-size: 14px;">
+        Google Play Console par app updates upload karne ke liye ye keystore zaroori hoti hai. Ise apne paas safe rakhein:
+      </p>
+      <div class="code-box">
+Keystore File : my-upload-key.jks<br>
+Keystore Pass : password123<br>
+Key Alias     : upload<br>
+Key Password  : password123
+      </div>
+      <a class="btn btn-secondary" href="my-upload-key.jks" download="my-upload-key.jks">
+        🔑 Download my-upload-key.jks
+      </a>
+    </div>
+
+    <div class="card">
+      <h2>🔗 Console Links</h2>
+      <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 12px;">
+        Play Console Data Safety aur Policy sections ke liye links:
+      </p>
+      <ul>
+        <li><strong>Privacy Policy URL:</strong> <a href="privacy_policy.html" style="color: var(--accent);">privacy_policy.html</a></li>
+        <li><strong>Account & Data Deletion URL:</strong> <a href="account_deletion.html" style="color: var(--accent);">account_deletion.html</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

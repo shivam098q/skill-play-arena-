@@ -1,0 +1,6 @@
+{
+  "name": "SkillPlay Arena",
+  "description": "Competitive daily arcade gaming platform with 1 official daily attempt, live leaderboards, and rewarded ads.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

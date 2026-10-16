@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account & Data Deletion - SkillPlay Arena</title>
+    <style>
+        :root {
+            --primary: #0284c7;
+            --primary-dark: #0369a1;
+            --danger: #dc2626;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --bg-page: #f8fafc;
+            --bg-card: #ffffff;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-main);
+            background-color: var(--bg-page);
+            padding: 32px 16px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+            padding: 40px 32px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 24px 20px;
+            }
+        }
+
+        header {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 20px;
+            margin-bottom: 26px;
+        }
+
+        .app-badge {
+            display: inline-block;
+            background: #fee2e2;
+            color: #b91c1c;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 4px 10px;
+            border-radius: 9999px;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 6px;
+        }
+
+        .subtitle {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            border-left: 4px solid var(--primary);
+            padding-left: 10px;
+        }
+
+        h3 {
+            font-size: 1.08rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-top: 18px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 14px;
+            font-size: 0.98rem;
+            color: #334155;
+        }
+
+        ol, ul {
+            margin-left: 24px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 0.98rem;
+            color: #334155;
+        }
+
+        .method-card {
+            background-color: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 18px 0;
+        }
+
+        .btn-action {
+            display: inline-block;
+            background-color: var(--danger);
+            color: #ffffff !important;
+            padding: 12px 22px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-decoration: none;
+            margin: 12px 0;
+            box-shadow: 0 2px 4px rgba(220, 38, 38, 0.25);
+            transition: background 0.2s ease;
+        }
+
+        .btn-action:hover {
+            background-color: #b91c1c;
+            text-decoration: none;
+        }
+
+        .danger-card {
+            background-color: #fef2f2;
+            border: 1px solid #fecaca;
+            border-left: 4px solid var(--danger);
+            padding: 16px 18px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 0.95rem;
+            color: #991b1b;
+        }
+
+        .info-card {
+            background-color: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-left: 4px solid #16a34a;
+            padding: 16px 18px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 0.95rem;
+            color: #166534;
+        }
+
+        .sample-box {
+            background: #f1f5f9;
+            border: 1px solid #cbd5e1;
+            padding: 14px 16px;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 0.9rem;
+            margin: 12px 0 16px 0;
+            white-space: pre-wrap;
+            color: #1e293b;
+        }
+
+        footer {
+            margin-top: 42px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.86rem;
+            color: var(--text-muted);
+            text-align: center;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="app-badge">User Data & Deletion</div>
+        <h1>Account & Data Deletion</h1>
+        <p class="subtitle"><strong>App Name:</strong> SkillPlay Arena | <strong>Developer Contact:</strong> <a href="mailto:kashyap10102007@gmail.com">kashyap10102007@gmail.com</a></p>
+    </header>
+
+    <p>In accordance with <strong>Google Play Developer Policies regarding User Data & Account Deletion</strong>, all users of <strong>SkillPlay Arena</strong> have the unequivocal right to permanently delete their account, gameplay scores, and all associated personal data.</p>
+
+    <h2>Method 1: Delete Directly Inside the App (Instant)</h2>
+    <div class="method-card">
+        <p>If you have the SkillPlay Arena app installed on your device, you can delete your account instantly:</p>
+        <ol>
+            <li>Open the <strong>SkillPlay Arena</strong> app.</li>
+            <li>Tap the <strong>Profile</strong> icon in the bottom navigation bar.</li>
+            <li>Scroll to the <strong>ACCOUNT ACTIONS</strong> section at the bottom.</li>
+            <li>Tap <strong>DELETE ACCOUNT</strong>.</li>
+            <li>Review the confirmation dialog: <em>"Delete your account? Deleting your account is permanent..."</em></li>
+            <li>Tap <strong>Delete Account</strong> to confirm.</li>
+            <li>If security re-authentication is required, confirm your password or Google account.</li>
+            <li>Your account and data are <strong>immediately purged</strong> from our servers and you will be signed out.</li>
+        </ol>
+    </div>
+
+    <h2>Method 2: Request Deletion via Web or Email (Without Reinstalling)</h2>
+    <div class="method-card">
+        <p>If you have uninstalled the application, do not have access to your device, or prefer submitting a manual request, you can request full deletion via email:</p>
+
+        <p>
+            <a class="btn-action" href="mailto:kashyap10102007@gmail.com?subject=Account%20and%20Data%20Deletion%20Request%20-%20SkillPlay%20Arena&body=Dear%20SkillPlay%20Arena%20Team%2C%0A%0APlease%20permanently%20delete%20my%20SkillPlay%20Arena%20account%20and%20all%20associated%20data.%0A%0ARegistered%20Email%3A%20%0APlayer%20Display%20Name%3A%20%0A%0AThank%20you.">
+                Email Account Deletion Request
+            </a>
+        </p>
+
+        <h3>Manual Request Template</h3>
+        <p>If clicking the button does not open your email client, send an email to <strong>kashyap10102007@gmail.com</strong> with the following details:</p>
+        <div class="sample-box">To: kashyap10102007@gmail.com
+Subject: Account and Data Deletion Request - SkillPlay Arena
+
+Message Body:
+Dear SkillPlay Arena Support Team,
+
+Please permanently delete my user account and all personal data associated with SkillPlay Arena.
+
+- Registered Email Address: [Your email address used to sign in]
+- Player Display Name: [Your in-game display name]
+
+Thank you.</div>
+    </div>
+
+    <h2>What Data Is Deleted?</h2>
+    <div class="danger-card">
+        <strong>The following data is permanently erased upon account deletion:</strong>
+        <ul style="margin-top: 8px;">
+            <li>Firebase Authentication record (User ID / UID, email address, password hash, and auth tokens)</li>
+            <li>Cloud Firestore player profile document (<code>users/{uid}</code>)</li>
+            <li>All personal leaderboard scores, records, and podium ranks across all games (<code>leaderboards/{gameId}/players/{uid}</code>)</li>
+            <li>All daily play attempt logs and reset timestamps (<code>gameAttempts</code>)</li>
+            <li>Locally cached session preferences and tokens</li>
+        </ul>
+    </div>
+
+    <h2>Retention & Processing Timeline</h2>
+    <div class="info-card">
+        <ul>
+            <li><strong>In-App Deletion:</strong> Processed instantly and permanently at the time of user confirmation.</li>
+            <li><strong>Email Deletion Requests:</strong> Acknowledged within 48 hours and completely purged within <strong>30 days</strong> of verification.</li>
+            <li><strong>Post-Deletion Retention:</strong> Zero personal data is retained following completion of the deletion process.</li>
+        </ul>
+    </div>
+
+    <h2>Related Resources</h2>
+    <p>Please review our full <a href="privacy_policy.html">SkillPlay Arena Privacy Policy</a> for additional information on how we safeguard user data.</p>
+
+    <footer>
+        &copy; 2026 SkillPlay Arena. All rights reserved. Complies with Google Play Developer Program Policies.
+    </footer>
+</div>
+
+</body>
+</html>
